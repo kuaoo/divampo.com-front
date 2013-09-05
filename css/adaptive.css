@@ -1,0 +1,144 @@
+html, body {
+	min-width: 320px;
+}
+nav, .wrap, header h1 {
+	min-width: 320px;
+	max-width: 800px;
+}
+header, footer {
+	min-width: 320px;
+}
+.projects {
+	max-width: 654px;
+	max-width: calc(650px + 4px);
+}
+figure {
+	max-width: 654px;
+	max-width: calc(650px + 4px);
+}
+figure img {
+	width: 100%;
+}
+figure.p404 {
+	max-width: 404px;
+	margin: 0 auto;
+}
+#page_loading {
+	max-width: 654px;
+	max-width: calc(650px + 4px);
+}
+
+@media all and (max-width: 650px) {
+	nav a {
+		margin: 0 .5em;
+	}
+}
+@media all and (min-width: 601px) {
+	nav a.adapt-short {
+		display: none;
+	}
+	nav a.adapt-long {
+		display: inline;
+	}
+}
+@media all and (max-width: 600px) {
+	body {
+		font-size: 13px;
+
+	}
+	nav a.adapt-short {
+		display: inline;
+	}
+	nav a.adapt-long {
+		display: none;
+	}
+	.greeting .main-gallery-paging li {
+		width: 1em;
+		height: 1em;
+		margin: 0 .5em;
+		-webkit-border-radius: 1em;
+		   -moz-border-radius: 1em;
+				border-radius: 1em;
+	}
+	.projects li {
+		margin-bottom: 5em;
+	}
+	#main-gallery li {
+		margin-bottom: 1.5em;
+	}
+	.greeting .main-gallery-paging li.prev, .greeting .main-gallery-paging li.next {
+		font-size: 4em;
+		line-height: .10em;
+	}
+}
+@media all and (max-width: 540px) {
+	nav, .wrap, header, footer {
+		padding-left: .8em !important;
+		padding-right: .8em !important;
+	}
+	#light-switch {
+		right: .8em !important;
+	}
+	body {
+		font-size: 12px;
+	}
+	footer .counters {
+		position: absolute;
+		visibility: hidden;
+	}
+
+	nav a {
+		margin: 0 .4em;
+	}
+	.flexbox nav {
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-align-content: space-between;
+		-ms-flex-line-pack: justify;
+		align-content: space-between;
+	}
+	.flexbox nav a {
+		margin: 0;
+	}
+	.flexbox nav a:last-child {
+		margin-right: 2.8em !important;
+	}
+	.projects li {
+		margin-bottom: 4.5em;
+	}
+	#main-gallery li {
+		margin-bottom: 1.8em;
+	}
+	.greeting .main-gallery-paging li {
+		width: 1.3em;
+		height: 1.3em;
+		margin: 0 .6em;
+		-webkit-border-radius: 1.3em;
+		   -moz-border-radius: 1.3em;
+				border-radius: 1.3em;
+	}
+	.greeting .main-gallery-paging li.prev, .greeting .main-gallery-paging li.next {
+		font-size: 4.5em;
+		line-height: .06em;
+	}
+
+	#light-switch text {
+		font-size: 1em;
+	}
+@media all and (max-width: 400px) {
+	body {
+		font-size: 11px;
+	}
+	.projects li {
+		margin-bottom: 4em;
+	}
+	#main-gallery li {
+		margin-bottom: 2em;
+	}
+	.greeting .main-gallery-paging li.prev, .greeting .main-gallery-paging li.next {
+		line-height: .10em;
+	}
+}
